@@ -18,9 +18,9 @@
 <body>
     <div class="wrapper">
 
-        <section class="new_product">
+        <section class="section new_product">
             <form class="clearfix">
-                <p>Add new product</p>
+                <p class="description">Add new product</p>
 
                 <label for="category">Category:</label>
                 <select id="category">
@@ -29,15 +29,38 @@
                     <option value="entertainment">Entertainment</option>
                 </select>
 
-                <label for="price">Price:</label>
-                <input type="number" id="price">
-
                 <label for="product">Product:</label>
                 <input type="text" id="product">
+
+                <label for="price">Price:</label>
+                <input type="number" id="price">
 
                 <button class="btn btn_add">Add</button>
                 <button class="btn btn_clear">Clear</button>
             </form>
+        </section>
+
+        <section class='section income clearfix'>
+            <p class='description'>Enter your income</p>
+            <input type="number" placeholder="Amount">
+            <input type="text" placeholder="Source of income">
+            <button class="btn btn_add">Add</button>
+            <button class="btn btn_clear">Clear All</button>
+        </section>
+
+        <section class='section expenses'>
+            <p>Expenses</p>
+            <div class="container clearfix">
+                <div class='food exp_category'>
+                    <p>Food</p>
+                </div>
+                <div class='transport exp_category'>
+                    <p>Transport</p>
+                </div>
+                <div class='entertainment exp_category'>
+                    <p>Entertainment</p>
+                </div>
+            </div>
         </section>
 
     </div>

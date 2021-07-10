@@ -21,18 +21,16 @@ div.wrapper {
     clear: both;
 }
 
-/* Section for add new product */
+/* ------------------------Section for add new product--------------------- */
 
-section.new_product {
-    /* border: 2px solid black; */
+section {
     width: 20%;
     padding: 20px 20px;
     background-color:rgb(250, 205, 227);
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
-    /* height: 55vh; */
 }
 
-.new_product p {
+.description {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 22px;
@@ -56,6 +54,7 @@ input, select{
     height: 24px;
     padding: 5px 5px;
     border: none;
+    outline: none;
     
 }
 
@@ -84,5 +83,91 @@ input, select{
     background-color:rgb(195, 226, 230);
 }
 
+/* --------------------------Section of income----------------------- */
 
+section.income {
+    margin-top: 50px;
+    background-color:  rgb(255, 252, 227);
+    position: relative;
+}
+
+.income input {
+    position: absolute;
+    float:left;
+    display: inline;
+    width: 40%;
+    margin-right: 20px;
+}
+
+.income input:nth-child(2) {
+    left: 50%;
+}
+
+.income .btn {
+    margin-top: 50px;
+}
+
+
+/* -------------------------Section of expenses -------------------------- */
+
+section.expenses {
+    position: absolute;
+    left: 25%;
+    top: 20px;
+    width: 72%;
+    height: 90vh;
+    background-color: #fff;
+}
+
+.container {
+    height: 90%;
+    width: 100%;
+}
+
+.exp_category {
+    width: 33%;
+    height: 100%;
+    background-color: green;
+    float: left;
+    margin: auto 2px;
+}
+
+.container p {
+    /* display: block;  */
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: #eee;
+    border-bottom: 1px solid white;
+}
+
+.food.exp_category {
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+    
+}
+
+.transport.exp_category {
+    background-color: #abe9cd;
+background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+
+}
+
+.entertainment.exp_category {
+    background-color: #ee8c68;
+background-image: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
+
+}
+
+.expenses > p {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-style:oblique;
+    margin-bottom: 5px;
+    border-bottom: 3px dotted #aaa;
+}
 
